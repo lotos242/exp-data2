@@ -1,6 +1,6 @@
 library(dplyr)
 library(ggplot2)
-setwd("C:/Users/solot/Downloads/exdata-data-NEI_data")
+setwd("/Users/Maria/Documents/rcode/exdata-data-NEI_data")
 scc <- readRDS("summarySCC_PM25.rds")
 scode <- readRDS("Source_Classification_Code.rds")
 onroad <- filter(scode, grepl("On-Road", EI.Sector, ignore.case = FALSE))
